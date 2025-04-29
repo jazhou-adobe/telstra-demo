@@ -9,7 +9,7 @@ export default function decorate(block) {
 
   // Get content divs
   const [imageDiv, contentDiv] = block.children;
-  
+
   // Handle image
   if (imageDiv) {
     const image = imageDiv.querySelector('img');
@@ -59,4 +59,4 @@ export default function decorate(block) {
   // Replace block content with new structure
   block.textContent = '';
   block.appendChild(container);
-} 
+}

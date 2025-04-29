@@ -37,13 +37,13 @@
 
 
 @font-face {
-  font-family: Telstra Display;
+  font-family: "Telstra Display";
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/telstra-display-medium.woff2) format("woff2"),url(../able/fonts/telstra-display-medium.woff) format("woff")
+  src: url("../fonts/telstra-display-medium.woff2") format("woff2"),url("../able/fonts/telstra-display-medium.woff") format("woff")
 }
 
 @font-face {
-  font-family: Telstra Text Variable;
-  src: url(../fonts/telstra-text.woff2) format("woff2-variations"),url(../able/fonts/telstra-text.ttf) format("truetype-variations")
+  font-family: "Telstra Text Variable";
+  src: url("../fonts/telstra-text.woff2") format("woff2-variations"),url("../able/fonts/telstra-text.ttf") format("truetype-variations")
 }

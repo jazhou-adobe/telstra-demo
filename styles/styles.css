@@ -20,8 +20,8 @@
   --link-hover-color: #1d3ecf;
 
   /* fonts */
-  --body-font-family: Telstra Text Variable,roboto, roboto-fallback, sans-serif;
-  --heading-font-family: Telstra Text Variable,roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: telstra text variable,roboto, roboto-fallback, sans-serif;
+  --heading-font-family: telstra text variable,roboto-condensed, roboto-condensed-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
