@@ -28,31 +28,13 @@
           "multi": false
         },
         {
-          "component": "text",
-          "name": "title",
-          "label": "Title",
-          "valueType": "string"
-        },
-        {
           "component": "richtext",
-          "name": "description",
-          "label": "Description",
+          "name": "content",
+          "label": "Content",
           "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "link",
-          "label": "Link URL",
-          "valueType": "string"
-        },
-        {
-          "component": "text",
-          "name": "buttonText",
-          "label": "Button Text",
-          "valueType": "string",
-          "default": "Learn More"
         }
       ]
     }
-  ]
+  ],
+  "filters": []
 } 
