@@ -166,36 +166,19 @@ header nav[aria-expanded='true'] .nav-sections {
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
-  font-size: 20px;
-  margin: 0;
-  display: flex;
-  gap: 40px;
+  font-size: var(--body-font-size-s);
 }
 
 header nav .nav-sections ul > li {
-  font-weight: 600;
-  color: #282828;
-  position: relative;
-  cursor: pointer;
-  padding-right: 24px;
+  font-weight: 500;
 }
 
-header nav .nav-sections ul > li::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 12px;
-  height: 12px;
-  background-image: url('data:image/svg+xml;utf8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.41 0.589844L6 5.16984L10.59 0.589844L12 1.99984L6 7.99984L0 1.99984L1.41 0.589844Z" fill="%23282828"/></svg>');
-  background-repeat: no-repeat;
-  background-position: center;
-  transform: translateY(-50%);
-  transition: transform 0.2s ease;
+header nav .nav-sections ul > li > ul {
+  margin-top: 0;
 }
 
-header nav .nav-sections ul > li[aria-expanded='true']::after {
-  transform: translateY(-50%) rotate(180deg);
+header nav .nav-sections ul > li > ul > li {
+  font-weight: 400;
 }
 
 @media (width >= 900px) {
@@ -211,26 +194,28 @@ header nav .nav-sections ul > li[aria-expanded='true']::after {
 
   header nav .nav-sections .nav-drop {
     position: relative;
-    padding-right: 24px;
+    padding-right: 16px;
     cursor: pointer;
   }
 
   header nav .nav-sections .nav-drop::after {
     content: '';
-    width: 12px;
-    height: 12px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.41 0.589844L6 5.16984L10.59 0.589844L12 1.99984L6 7.99984L0 1.99984L1.41 0.589844Z" fill="%23282828"/></svg>');
-    background-repeat: no-repeat;
-    background-position: center;
+    display: inline-block;
     position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
+    top: 0.5em;
+    right: 2px;
+    transform: rotate(135deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0;
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    transform: translateY(-50%) rotate(180deg);
+    top: unset;
+    bottom: 0.5em;
+    transform: rotate(315deg);
   }
 
   header nav .nav-sections ul {
