@@ -6,7 +6,6 @@ export default function decorate(block) {
   const imageDiv = block.firstElementChild;
   imageDiv.className = 'teaser-image';
 
-  // Add teaser-content class to second div and its first child div 
   const contentDiv = block.children[1];
   contentDiv.className = 'teaser-content';
 
@@ -23,7 +22,6 @@ export default function decorate(block) {
       paragraphs[1].className = 'teaser-link';
     }
   }
-
 
   // Optimize images
   block.querySelectorAll('picture > img').forEach((img) => {
