@@ -255,3 +255,47 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* list component styles */
+.default-content-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.default-content-wrapper ul li {
+  flex: 1 1 200px;
+  min-width: 200px;
+  background: var(--background-color);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: var(--body-font-size-s);
+}
+
+.default-content-wrapper ul li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.default-content-wrapper ul .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.default-content-wrapper ul .icon img {
+  width: 24px;
+  height: 24px;
+}
