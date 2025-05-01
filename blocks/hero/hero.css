@@ -1,37 +1,71 @@
-.hero-container .hero-wrapper {
-  max-width: unset;
-  padding: 0;
+.hero-wrapper {
+  background-color: #0033FF;
+  border-radius: 0 0 32px 0;
+  width: 100%;
 }
 
 .hero {
-  position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero h1 {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 48px;
+  color: white;
 }
 
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
+.hero-image {
+  flex: 1;
 }
 
-.hero img {
-  object-fit: cover;
+.hero-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
 }
 
-@media (width >= 900px) {
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 32px 0;
+}
+
+.hero-button-container {
+  margin: 0;
+}
+
+.hero-button-container .button {
+  display: inline-block;
+  background: white;
+  color: #0033FF;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
   .hero {
-    padding: 40px 32px;
+    flex-direction: column;
+    padding: 32px 16px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 16px;
   }
 }

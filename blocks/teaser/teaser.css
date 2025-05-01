@@ -1,0 +1,53 @@
+.teaser {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.teaser-image {
+  flex: 1;
+}
+
+.teaser-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.teaser-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.teaser-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.teaser-description {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .teaser {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .teaser-image,
+  .teaser-content {
+    width: 100%;
+  }
+  
+  .teaser-title {
+    font-size: 1.75rem;
+  }
+}
